@@ -24,14 +24,14 @@
         <section>
             <h2>Ingreso de Incidentes (Help Desk)</h2>
             
-            <form action="#" method="POST">
-                <article>
+            <article>
+                <h3>Formulario de Registro de Nuevo Fallo</h3>
+                
+                <form action="#" method="POST">
                     <label for="titulo">Título del incidente:</label><br>
                     <input type="text" id="titulo" name="titulo" placeholder="Ej. Falla en el switch principal" required>
-                </article>
-                <br>
+                    <br><br>
 
-                <article>
                     <label for="categoria">Categoría del problema:</label><br>
                     <select id="categoria" name="categoria" required>
                         <option value="">Seleccione una opción...</option>
@@ -39,10 +39,8 @@
                         <option value="Hardware">Hardware</option>
                         <option value="Software">Software</option>
                     </select>
-                </article>
-                <br>
+                    <br><br>
 
-                <article>
                     <p>Nivel de prioridad:</p>
                     <input type="radio" id="alta" name="prioridad" value="Alta" required>
                     <label for="alta">Alta</label><br>
@@ -52,17 +50,16 @@
                     
                     <input type="radio" id="baja" name="prioridad" value="Baja">
                     <label for="baja">Baja</label>
-                </article>
-                <br>
+                    <br><br>
 
-                <article>
                     <label for="descripcion">Descripción detallada del fallo:</label><br>
                     <textarea id="descripcion" name="descripcion" rows="5" cols="40" placeholder="Escriba los detalles del incidente aquí..." required></textarea>
-                </article>
-                <br>
+                    <br><br>
 
-                <button type="submit">Registrar Ticket</button>
-            </form>
+                    <button type="submit">Registrar Ticket</button>
+                </form>
+            </article>
+
         </section>
     </main>
 
