@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Incidente | Help Desk</title>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Gestión de Incidentes</h1>
+        <p>Reporte de nuevos fallos en el Data Center</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Dashboard Principal</a></li>
+            <li><a href="reportar.html">Reportar Incidente</a></li>
+            <li><a href="tickets.html">Ver Tickets Registrados</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Ingreso de Incidentes (Help Desk)</h2>
+            
+            <form action="#" method="POST">
+                <article>
+                    <label for="titulo">Título del incidente:</label><br>
+                    <input type="text" id="titulo" name="titulo" placeholder="Ej. Falla en el switch principal" required>
+                </article>
+                <br>
+
+                <article>
+                    <label for="categoria">Categoría del problema:</label><br>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Seleccione una opción...</option>
+                        <option value="Red">Red</option>
+                        <option value="Hardware">Hardware</option>
+                        <option value="Software">Software</option>
+                    </select>
+                </article>
+                <br>
+
+                <article>
+                    <p>Nivel de prioridad:</p>
+                    <input type="radio" id="alta" name="prioridad" value="Alta" required>
+                    <label for="alta">Alta</label><br>
+                    
+                    <input type="radio" id="media" name="prioridad" value="Media">
+                    <label for="media">Media</label><br>
+                    
+                    <input type="radio" id="baja" name="prioridad" value="Baja">
+                    <label for="baja">Baja</label>
+                </article>
+                <br>
+
+                <article>
+                    <label for="descripcion">Descripción detallada del fallo:</label><br>
+                    <textarea id="descripcion" name="descripcion" rows="5" cols="40" placeholder="Escriba los detalles del incidente aquí..." required></textarea>
+                </article>
+                <br>
+
+                <button type="submit">Registrar Ticket</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Estudio de Desarrollo - Departamento de TI. Todos los derechos reservados.</p>
+        <p>Desarrollado por: Roberto Carlos Agila Agila</p>
+    </footer>
+
+</body>
+</html>
